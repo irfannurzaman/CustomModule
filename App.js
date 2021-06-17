@@ -10,6 +10,7 @@ import {ActivityIndicator,
     NativeEventEmitter,
     Switch,
     TouchableOpacity,
+    NativeModules,
     Dimensions,
     ToastAndroid} from 'react-native';
 import {BluetoothEscposPrinter, BluetoothManager, BluetoothTscPrinter} from "react-native-bluetooth-escpos-printer";
@@ -17,6 +18,10 @@ import {BluetoothEscposPrinter, BluetoothManager, BluetoothTscPrinter} from "rea
 //  import Tsc from "./tsc";
 
 var {height, width} = Dimensions.get('window');
+
+var ToasExample = NativeModules.ToastModule;
+
+
 export default class Home extends Component {
 
 
